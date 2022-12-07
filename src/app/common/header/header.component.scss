@@ -1,0 +1,18 @@
+.navbar{
+  padding-top:20px;
+  padding-bottom: 10px;
+  position:relative;
+  //
+  background: white;
+}
+.navbar-brand{
+  //padding-left: 43.5%;
+}
+.nav-item{
+
+  transition: background 0.1s linear 0s , color 0.1s linear 0s;
+}
+.nav-item:hover{
+  background: #eaeaea;
+  color: #FFF;
+}

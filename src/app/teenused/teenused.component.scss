@@ -1,0 +1,12 @@
+.nav-link{
+  transition: background 0.1s linear 0s , color 0.1s linear 0s;
+}
+.nav-link:hover{
+  background: #fdfdfd;
+  color: #FFF;
+  cursor:pointer;
+}
+
+.nav-item{
+  background: bg-warning;
+}

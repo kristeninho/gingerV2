@@ -1,0 +1,49 @@
+<div>
+  <div>
+    <h1 class="text-center heading">Töötajad</h1>
+  </div>
+</div>
+
+<div class="container" style="padding-top:20px">
+  <div class="row">
+    <div class="col-sm">
+      <h4 class="mx-auto text-warning">NAISTEJUUKSURID</h4>
+      <table class="table">
+        <thead>
+        <tr>
+          <th scope="col">Juuksur</th>
+          <th scope="col">📞 (+372)</th>
+          <th scope="col">Tööaeg</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr  *ngFor="let juuksur of naisteJuuksurid">
+          <td>{{juuksur.name}}</td>
+          <td>{{juuksur.phone}}</td>
+          <td>{{juuksur.registerInfo}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-sm">
+      <h4 class="mx-auto text-warning">MEESTEJUUKSURID</h4>
+      <table class="table">
+        <thead>
+        <tr>
+          <th scope="col">Juuksur</th>
+          <th scope="col">📞 (+372)</th>
+          <th scope="col">Tööaeg</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let juuksur of meesteJuuksurid">
+          <td>{{juuksur.name}}</td>
+          <td>{{juuksur.phone}}</td>
+          <td>{{juuksur.registerInfo}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+

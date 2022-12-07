@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3">
+      <div class="bg-warning">
+        <ul style="list-style-type:none"><h3 class="pt-2">Teenused</h3>
+          <li class="nav-item rounded item">            
+            <a class="nav-link text-dark" (click)="this.female=true">Naiste</a>          
+          </li>
+          <li class="nav-item rounded item">
+            <a class="nav-link text-dark" (click)="this.female=false">Meeste</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="col-lg-1 bg-white">
+    </div>
+    <div class="col">
+      <div *ngIf="female==true">
+        <app-naiste-teenused></app-naiste-teenused>        
+      </div>
+      <div *ngIf="female!=true">
+        <app-meeste-teenused></app-meeste-teenused>
+      </div>
+    </div>
+  </div>
+</div>

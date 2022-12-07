@@ -1,0 +1,87 @@
+<div>
+    <div>
+      <h1 class="text-center heading pt-2 ">Naiste teenused</h1>
+    </div>
+  </div>
+  
+  <div class="container" style="padding-top:20px">
+    <div class="row">
+      <div class="col-sm">
+        <h4 class="mx-auto text-warning">Lõikused ja soengud</h4>
+        <table class="table">
+          <thead>
+          <tr *ngFor="let teenus of loikusedJaSoengud">
+            <th scope="col">{{teenus.name}}</th>
+            <th scope="col">{{teenus.price}} €</th>            
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td></td>
+            <td></td>            
+          </tr>
+          </tbody>
+        </table>
+        <h4 class="mx-auto text-warning">Keemilised lokid</h4>
+        <table class="table">
+          <thead>
+            <tr *ngFor="let teenus of keemilisedLokid">
+                <th scope="col">{{teenus.name}}</th>
+                <th scope="col">{{teenus.price}} €</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td></td>
+            <td></td>            
+          </tr>
+          </tbody>
+        </table>
+        <h4 class="mx-auto text-warning">Värvimine</h4>
+        <table class="table">
+          <thead>
+            <tr *ngFor="let teenus of varvimine">
+                <th scope="col">{{teenus.name}}</th>
+                <th scope="col">{{teenus.price}} €</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td></td>
+            <td></td>            
+          </tr>
+          </tbody>
+        </table>
+        <h4 class="mx-auto text-warning">Muud teenused</h4>
+        <table class="table">
+          <thead>
+            <tr *ngFor="let teenus of muudTeenused">
+                <th scope="col">{{teenus.name}}</th>
+                <th scope="col">{{teenus.price}} €</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td></td>
+            <td></td>            
+          </tr>
+          </tbody>
+        </table>
+        <h4 class="mx-auto text-warning">Juuste ravi</h4>
+        <table class="table">
+          <thead>
+            <tr *ngFor="let teenus of juusteRavi">
+                <th scope="col">{{teenus.name}}</th>
+                <th scope="col">{{teenus.price}} €</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td></td>
+            <td></td>            
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>

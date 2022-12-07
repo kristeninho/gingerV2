@@ -1,0 +1,27 @@
+<div>
+    <div>
+      <h1 class="text-center heading pt-2">Meeste teenused</h1>
+    </div>
+  </div>
+  
+  <div class="container" style="padding-top:20px">
+    <div class="row">
+      <div class="col-sm">
+        <h4 class="mx-auto text-warning">Lõikused ja soengud</h4>
+        <table class="table">
+          <thead>
+          <tr *ngFor="let teenus of meesteTood">
+            <th scope="col">{{teenus.name}}</th>
+            <th scope="col">{{teenus.price}} €</th>            
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td></td>
+            <td></td>            
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
